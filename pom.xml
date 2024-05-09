@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
+<artifactId>sonar_pro</artifactId>
+<groupId>sonar.pro.com</groupId>
+<modelVersion>4.0.0</modelVersion>
+<version>1.0.0</version>
+<packaging>jar</packaging>
+
+<build>
+  <plugins>
+    <plugin>
+        <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
+        <artifactId>sonar-packaging-maven-plugin</artifactId>
+        <version>8.9.10.61524</version>
+    </plugin>
+  </plugins>
+</build>
+
+<properties>
+	<sonar.host.url>https://localhost:9000</sonar.host.url>
+	<sonar.login>31f7be854869bc9fa98a40a1954c9071bed7e1dc</sonar.login>
+	
+	
+</properties>
+
+<!--<distributionManagement>
+	<repository>
+		<id>nexus</id>
+		<name>private release repo</name>
+		<url>http://13.233.91.198:8081/repository/maven_priavte_repo_proxy///</url>
+	</repository>
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>private_maven_repo</name>
+		<url>http://13.233.91.198:8081/repository/maven_private_snapshot_repo//</url>
+	</snapshotRepository>
+</distributionManagement>
+-->
+
+
+</project>
